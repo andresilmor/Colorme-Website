@@ -1,0 +1,410 @@
+﻿<!DOCTYPE html>
+<html lang="pt" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.00" />
+
+    <meta itemprop="name" content="@ViewData["Title"] - Colorme">
+
+    <link rel="canonical" href="https://www.colorme.pt">
+    <link href="https://www.colorme.pt/en/" hreflang="en-US" rel="alternate">
+
+    <meta name="theme-color" content="#F1F1F1">
+
+    <!--<meta name="google-site-verification" content=""> ATUALIZAR QUANDO ONLINE-->
+
+    <title>@ViewData["Title"] - Colorme</title>
+    <meta name="description" content="@ViewData["Description"]" />
+    <meta name="keywords" content="@ViewData["Keywords"]" />
+    <meta name="language" content="Portuguese">
+
+    <meta name="robots" content="follow" />
+
+    <meta property="og:title" content="@ViewData["Title"] - Colorme">
+    <meta property="og:description" content="@ViewData["Description"]" />
+    <meta property="og:image" content="img/outras/partilhaImagem.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:url" content="https://www.colorme.pt" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_PT" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@ViewData["Title"] - Colorme">
+    <meta name="twitter:image" content="img/outras/partilhaImagem.png">
+
+    <link rel="stylesheet" href="~/css/normalize.min.css" /> <!-- Versão v8.0.1 -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> <!-- Versão v4.3.1 -->
+    <link rel="stylesheet" href="~/css/site.min.css" />
+
+
+    <script type="application/ld+json">
+        {
+            "@@context": "http://schema.org",
+            "@@type": "https://schema.org/LocalBusiness",
+            "name": "Colorme",
+            "url": "https://colorme.pt/",
+            "sameAs": [
+                "https://www.facebook.com/colorme.pt/",
+                "https://www.facebook.com/colorme.pt/"
+            ],
+                "address": {
+                "@@type": "PostalAddress",
+                "streetAddress": "r/c, Praça Dr. Luís 30",
+                "addressRegion": "Paços de Ferreira",
+                "postalCode": "4590-529",
+                "addressCountry": "PT"
+            }
+        }
+    </script>
+
+</head>
+
+<body itemprop="mainContentOfPage">
+
+    <header itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WPHeader">
+        <nav class="navbar navbar-expand-lg navbar-light sticky background-color shadow" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Geral" asp-action="Index"><img src="~/img/icons/logo 62x38.png" class="img-fluid" alt="Logótipo de Colorme" /></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigaton">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav nav-main-menu">
+
+                        <li class="nav-item mr-2">
+                            <a class="nav-link" id="nav-principal" asp-area="" asp-controller="Geral" asp-action="Index">Página Inicial<span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item dropdown ml-2 mr-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Personalizar
+                            </a>
+                            <div class="dropdown-menu mt-2 shadow" aria-labelledby="navbarDropdown">
+
+                                <ul class="navbar-nav navbar-submenu">
+                                    <li>
+                                        <ul class="navbar-submenu-list">
+                                            <li>
+                                                <h5>Arte e Decoração</h5>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Quadros com Fotografias</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Caixas de Madeira</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Globos de Neve</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Cubos Mágicos</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <ul class="navbar-submenu-list">
+                                            <li>
+                                                <h5>Para o Lar</h5>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Almofadas</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Canecas</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Aventais</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Puzzles</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Mealheiros</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <ul class="navbar-submenu-list">
+                                            <li>
+                                                <h5>Vestuário</h5>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Mulher</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Homem</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Criança</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Gorros</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <ul class="navbar-submenu-list">
+                                            <li>
+                                                <h5>Outros</h5>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Porta-chaves</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Carteiras</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Sacos</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Babetes</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Capas Telemóvel</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Isqueiros</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Pendrives</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Tapetes para Ratos</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Vinil</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Cozinha</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown ml-2 mr-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pré-Feitos
+                            </a>
+                            <div class="dropdown-menu mt-2 shadow" aria-labelledby="navbarDropdown">
+                                <ul class="navbar-nav navbar-submenu">
+                                    <li>
+                                        <ul class="navbar-submenu-list">
+                                            <li>
+                                                <h5>Produtos Temáticos</h5>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Dia do Pai</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Dia da Mãe</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Natal</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Dia dos Namorados</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" asp-area="" asp-controller="PreFeitos" asp-action="Madrinha">Para a Madrinha</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Para o Padrinho</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Para o/a Irmão/Irmã</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <ul class="navbar-submenu-list">
+                                            <li>
+                                                <h5>Para o Lar</h5>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Almofadas</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Canecas</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Aventais</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Puzzles</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Mealheiros</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <ul class="navbar-submenu-list">
+                                            <li>
+                                                <h5>Unisexo</h5>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">T-shirts</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Sweatshirts</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Body bebé</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Gorros</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <ul class="navbar-submenu-list">
+                                            <li>
+                                                <h5>Outros</h5>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Porta-chaves</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Carteiras</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Sacos</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Babetes</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Capas Telemóvel</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Isqueiros</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Pendrives</a>
+                                            </li>
+                                            <li class="nav-item  navbar-submenu-item">
+                                                <a class="dropdown-item" href="#">Tapetes para Ratos</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item ml-2 mr-2">
+                            <a class="nav-link" asp-area="" asp-controller="Geral" asp-action="SobreNos">Sobre Nós<span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item ml-2 mr-2">
+                            <a class="nav-link" asp-area="" asp-controller="Geral" asp-action="Portfolio">Portfólio<span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item ml-3 mr-2">
+                            <a class="nav-link" asp-area="" asp-controller="Geral" asp-action="Index"><img src="~/img/icons/lupa.png" class="img-valign img-fluid" alt="Pesquisa Icon" /><span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item mr-2">
+                            <a class="nav-link selected" asp-area="" asp-controller="Geral" asp-action="Index"><img src="~/img/icons/conta.png" class="img-valign img-fluid mr-1" alt="Login Icon" />Login<span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item ml-1 mr-1">
+                            <a class="nav-link" asp-area="" asp-controller="Geral" asp-action="Index"><img src="~/img/icons/carrinho.png" class="img-valign img-fluid" alt="Carrinho de Compras Icon" /><span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item ml-2">
+                            <div>
+                                <a class="nav-link selected" style="display:inline-block; padding-right: 0;" asp-area="" asp-controller="Geral" asp-action="Index">PT<span class="sr-only">(current)</span></a>
+                                /
+                                <a class="nav-link " style="display:inline-block; padding-left: 0;" asp-area="" asp-controller="Geral" asp-action="Index">EN<span class="sr-only">(current)</span></a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!--
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="pb-3" itemprop="main">
+        @RenderBody()
+    </main>
+
+    <footer class="border-top footer text-muted" itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WPFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 mt-3 text-center">
+                    <a asp-area="" asp-controller="Geral" asp-action="Index"><img src="~/img/icons/logo 122x73.png" class="img-fluid mt-5" alt="Logótipo de Colorme" /></a>
+                </div>
+                <div class="col-lg-3 container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            Praça Dr. Luis, Nº30 R/C<br />
+                            4590-529, Paços de Ferreira
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <a target="_blank" class="link" href="https://goo.gl/maps/rex4oAmHkYUijnbM6">Ver Mapa</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 mt-3">
+                    geral@colorme.pt<br />
+                    255 892 415
+                </div>
+                <div class="col-lg-3">
+                    <div class="row pb-0 text-center">
+                        <div class="col-lg-12">
+                            REDES SOCIAIS
+                        </div>
+                    </div>
+                    <div class="row pt-0 text-center">
+                        <div class="col-lg-12 pt-0">
+                            <a target="_blank" href="https://www.facebook.com/colorme.pt/"><img src="~/img/icons/facebook.png" class="img-fluid mr-3" alt="Link para página de Facebook" /></a>
+                            <a target="_blank" href="https://api.whatsapp.com/send?phone=+351910701128"><img src="~/img/icons/whatshapp.png" class="img-fluid ml-3" alt="Link para o Whatsapp" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 mt-3">
+                    geral@colorme.pt<br />
+                    255 892 415
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Global site tag (gtag.js) - Google Analytics // ATUALIZAR PARA UMA OFICIAL QUANDO ONLINE -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K69R0X8N15"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-K69R0X8N15');
+    </script>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.min.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
