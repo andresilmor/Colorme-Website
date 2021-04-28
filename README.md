@@ -1,4 +1,4 @@
-# Project Web
+# Colorme Website
 
 This is the final result of the project to "Project Web" curricular unit, its uses ASP.NET Core and the MVC structure, while it's only really used the Controller and Views part, it also used Bootstrap, being the basic method for the CSS present, and jQuery to the Javascript. It is also optimazated in the SEO ways, being used the actual HTML tags like header, nav, section (...), is also present Schema.org language, Open Graph meta tags and Twitter Card, the keywords, titles and descriptions are unique and specific to each page, being gived by the Controller. It was also used the Google Analytics and is taken in care others aspects as page speed, (...).
 
